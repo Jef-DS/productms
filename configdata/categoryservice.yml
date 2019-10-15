@@ -1,5 +1,9 @@
 server:
   port: 8081
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://PC-LAP/8761/eureka
 management:
   security:
     enabled: false
