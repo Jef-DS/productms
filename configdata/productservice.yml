@@ -9,6 +9,9 @@ feign:
     config:
       default:
         loggerLevel: full
+spring:
+  zipkin:
+    base-url: http://zipkin:9411
 management:
   security:
     enabled: false
