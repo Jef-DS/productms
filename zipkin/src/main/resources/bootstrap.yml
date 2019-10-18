@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: zipkinservice
+  cloud:
+    config:
+      uri: http://configuration:8888
+  profiles:
+    active: default
