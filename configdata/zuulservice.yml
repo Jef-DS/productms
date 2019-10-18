@@ -17,5 +17,5 @@ zuul:
       path: /product/**
       serviceId: product
     category:
-      path: /category:**
+      path: /category/**
       serviceId: category
