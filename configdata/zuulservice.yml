@@ -1,0 +1,21 @@
+server:
+  port: 8080
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:8761/eureka
+
+spring:
+  sleuth:
+    sampler:
+      probability: 100
+  zipkin:
+    base-url: http://zipkin:9411
+zuul:
+  routes:
+    product:
+      path: /product/**
+      serviceId: product
+    category:
+      path: /category:**
+      serviceId: category
