@@ -5,6 +5,9 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka:8761/eureka
 spring:
+  sleuth:
+    sampler:
+      probability: 100
   zipkin:
     base-url: http://zipkin:9411
 management:

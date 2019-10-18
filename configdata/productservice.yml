@@ -10,6 +10,9 @@ feign:
       default:
         loggerLevel: full
 spring:
+  sleuth:
+    sampler:
+      probability: 100
   zipkin:
     base-url: http://zipkin:9411
 management:
